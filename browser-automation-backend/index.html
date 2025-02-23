@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Automation Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>🚀 Task Automation Dashboard</h1>
+
+        <!-- 📜 Task List Section -->
+        <h2>Existing Tasks</h2>
+        <ul id="taskList" class="task-list"></ul>
+
+        <!-- ➕ Add Task Form -->
+        <h2>Add New Task</h2>
+        <form id="taskForm">
+            <label for="taskName">Task Name:</label>
+            <input type="text" id="taskName" placeholder="Enter task name" required>
+
+            <label for="url">URL:</label>
+            <input type="url" id="url" placeholder="Enter website URL" required>
+
+            <label>Actions:</label>
+            <div id="actionContainer">
+                <button type="button" onclick="addAction()">+ Add Action</button>
+                <ul id="actionList"></ul>
+            </div>
+
+            <button type="submit">Create Task</button>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
